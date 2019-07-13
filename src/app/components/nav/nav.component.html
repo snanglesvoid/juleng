@@ -1,0 +1,33 @@
+<div class="toggle" (click)="toggleNav()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<br /><br />
+<ul [@toggle]="visibility">
+  <li>
+    <a (click)="toggleNav()" routerLink="/">
+      <app-text-flip text="Home"></app-text-flip>
+    </a>
+  </li>
+  <li>
+    <a (click)="toggleNav()" routerLink="/cv">
+      <app-text-flip text="Artist CV"></app-text-flip>
+    </a>
+  </li>
+  <li>
+    <a (click)="toggleNav()" routerLink="/projects">
+      <app-text-flip text="Projects"></app-text-flip>
+    </a>
+  </li>
+  <li>
+    <a (click)="toggleNav()" routerLink="/projects/clay-body">
+      <app-text-flip text="Clay Body"></app-text-flip>
+    </a>
+  </li>
+  <li>
+    <a (click)="toggleNav()" routerLink="/projects/paste-in-place">
+      <app-text-flip text="Paste in Place"></app-text-flip>
+    </a>
+  </li>
+</ul>
