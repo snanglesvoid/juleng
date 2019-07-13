@@ -32,7 +32,7 @@ export class ThreeDHeadingComponent implements OnInit {
   constructor(private el: ElementRef) {}
 
   @Input() text: string
-  @Input() background: number = 0xffffff// 0xe6e6fa
+  @Input() background: number = 0xffffff // 0xe6e6fa
   @Input() backgroundAlpha: number = 1.0
   @Input() fontSize: number = 10.0
   @Input() fontHeight: number = 0.8
@@ -93,7 +93,7 @@ export class ThreeDHeadingComponent implements OnInit {
       window.requestAnimationFrame(_ => this.animate())
 
       TweenMax.to(this.animationData, 5, {
-        cameraPositionZ: 30,
+        cameraPositionZ: 50,
         ease: Expo.easeOut,
         onUpdate: _ => {
           this.camera.position.z = this.animationData.cameraPositionZ
